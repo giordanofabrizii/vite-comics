@@ -1,7 +1,15 @@
-# Vue 3 + Vite
+Create a component for the header
+    create the structur with an array of links
+    style the header
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Create a main content section
 
-## Recommended IDE Setup
+Create a nav section in the main
+    fill with an array of links
+    style the section
 
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
+create a footer
+    add links
+    style the footer
+
+add all the components in the app.vue
