@@ -6,45 +6,69 @@ export default{
                 {
                     name: 'characters',
                     link: 'www.google.com',
+                    active: 'none'
                 },
                 {
                     name: 'comics',
                     link: 'www.google.com',
+                    active: 'none'
                 },
                 {
                     name: 'movies',
                     link: 'www.google.com',
+                    active: 'none'
                 },
                 {
                     name: 'tv',
                     link: 'www.google.com',
+                    active: 'none'
                 },
                 {
                     name: 'games',
                     link: 'www.google.com',
+                    active: 'none'
                 },
                 {
                     name: 'collectibles',
                     link: 'www.google.com',
+                    active: 'none'
                 },
                 {
                     name: 'videos',
                     link: 'www.google.com',
+                    active: 'none'
                 },
                 {
                     name: 'fans',
                     link: 'www.google.com',
+                    active: 'none'
                 },
                 {
                     name: 'news',
                     link: 'www.google.com',
+                    active: 'none'  
                 },
                 {
                     name: 'shop',
                     link: 'www.google.com',
+                    active: 'none'
                 },
             ],
         }
+    },
+    methods:{
+        open: function(i){
+            this.headerLinks.forEach((link, index) => {
+                if (index == i) {
+                    link.active = 'true';
+                } else {
+                    link.active = 'none'
+                }
+            });
+        }
+    },
+    mounted(){
+        this.open(1)
     }
 }
 </script>
@@ -53,8 +77,8 @@ export default{
     <div class="container">
         <img src="../assets/img/dc-logo.png" alt="DC logo">
         <ul>
-            <li v-for="(item, index) in headerLinks" :key="index">
-                <a :href="item.link">{{ item.name }}</a>
+            <li v-for="(item, index) in headerLinks" :key="index" :class="(item.active == 'true') ? 'active' : ''" @click="open(index)">
+                {{ item.name }}
             </li>
         </ul>
     </div>
@@ -82,7 +106,7 @@ export default{
                 border-bottom: .5rem solid transparent;
                 text-transform: uppercase;
 
-                &:hover{
+                &.active{
                     border-bottom: .5rem solid $primary;
 
                 }
