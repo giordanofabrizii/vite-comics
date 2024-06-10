@@ -50,21 +50,21 @@ export default{
 </script>
 
 <template>
-    <header class="container">
+    <div class="container">
         <img src="../assets/img/dc-logo.png" alt="DC logo">
         <ul>
             <li v-for="(item, index) in headerLinks" :key="index">
                 <a :href="item.link">{{ item.name }}</a>
             </li>
         </ul>
-    </header>
+    </div>
 </template>
 
 <style lang="scss" scoped>
     @use '../styles/partials/variables.scss' as *;
     @use '../styles/partials/mixins.scss' as *;
     @use '../styles/general';
-    header{
+    .container{
         display: flex;
         justify-content: space-between;
 
