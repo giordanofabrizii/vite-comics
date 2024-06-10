@@ -3,6 +3,7 @@
   import Content from './components/MainApp.vue';
   import MainNav from './components/NavMainApp.vue';
   import FooterNav from './components/FooterNav.vue';
+  import Socials from './components/Socials.vue';
 
   export default{
     components:{
@@ -10,6 +11,7 @@
       Content,
       MainNav,
       FooterNav,
+      Socials,
     }
   }
 </script>
@@ -27,7 +29,10 @@
     </nav>
   </main>
   <footer>
-    <FooterNav/>
+    <div class="jumbo">
+      <FooterNav/>
+    </div>
+    <Socials/>
   </footer>
 </template>
 
@@ -45,8 +50,14 @@
   }
 
   footer{
-    background-image: url(./assets/img/footer-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #303030;
+
+    .jumbo {
+      background-image: url(./assets/img/footer-bg.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
+
+
 </style>
