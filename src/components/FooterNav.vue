@@ -164,7 +164,7 @@ export default{
             nav{
                 @include flexColumn;
                 align-items: start;
-                width: 13rem;
+                width: 12rem;
 
                 h2{
                     text-transform: uppercase;
@@ -180,9 +180,13 @@ export default{
 
                     a{
                         text-align: start;
-                        font-size: 1.2rem;
+                        font-size: 1rem;
                         color: $tertiary;
                         margin: .2rem 0;
+
+                        &:hover{
+                            text-decoration: underline;
+                        }
                     }
                 }
 

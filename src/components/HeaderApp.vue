@@ -106,9 +106,13 @@ export default{
                 border-bottom: .5rem solid transparent;
                 text-transform: uppercase;
 
+                &:hover{
+                    color: $tertiary;
+                }
+
                 &.active{
                     border-bottom: .5rem solid $primary;
-
+                    color: $primary;
                 }
             }
         }
