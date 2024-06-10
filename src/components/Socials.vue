@@ -39,6 +39,15 @@ export default{
             text-transform: uppercase;
             font-weight: 600;
             font-size: 1.3rem;
+            background: linear-gradient(to left, $quaternary 50%, white 50%);
+            background-size: 300% 100%;
+            background-position: right bottom;
+            transition: all .5s linear;
+
+            &:hover{
+                background-position: left bottom;
+                color: $secondary
+            }
         }
 
         .link-container {
