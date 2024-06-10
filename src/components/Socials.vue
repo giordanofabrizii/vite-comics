@@ -63,6 +63,11 @@ export default{
             img {
                 height: 2.7rem;
                 margin: 0 1rem;
+
+                &:hover{
+                    height: 3rem;
+                    margin: 0 .85rem;
+                }
             }
         }
     }
