@@ -23,6 +23,10 @@ export default{
         width: calc(100% / 6);
         padding: 1rem;
 
+        &:hover img{
+            animation: rotate .5s linear infinite;
+        }
+
         img{
             width: 100%;
             aspect-ratio: 1/1;
@@ -36,4 +40,17 @@ export default{
             margin-top: 1rem;
         }
     }
+
+    @keyframes rotate{
+        0%{
+            transform: rotate(0deg) scale(1);
+        }
+        50%{
+            transform: rotate(180deg) scale(2)
+        }
+        100%{
+            transform: rotate(360deg) scale(1);
+        }
+    }
+
 </style>
