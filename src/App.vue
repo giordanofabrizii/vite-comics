@@ -41,7 +41,6 @@
 
   .content{
     background-color: $secondary;
-    padding: 3rem;
   }
 
   nav{
